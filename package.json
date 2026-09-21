@@ -1,0 +1,25 @@
+{
+  "name": "ttb-playwright-artifact-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright project that consumes TR/EN crawl artifacts with {{hostname}} resolved from .env",
+  "scripts": {
+    "build": "tsc --noEmit",
+    "typecheck": "tsc --noEmit",
+    "test": "playwright test",
+    "test:offline": "playwright test tests/offline",
+    "test:live": "playwright test tests/live",
+    "test:artifacts": "playwright test tests/artifacts",
+    "test:inventory": "playwright test tests/artifacts/artifact-inventory.spec.ts",
+    "test:health": "playwright test tests/artifacts/url-health.spec.ts",
+    "test:pdf": "playwright test tests/artifacts/pdf-validation.spec.ts",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.0.0",
+    "dotenv": "^17.2.0",
+    "typescript": "^5.8.3"
+  }
+}
