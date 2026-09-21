@@ -7,7 +7,7 @@ TR ve EN crawl artifact'lerini Playwright testlerinde kullanmak için hazırlanm
 `.env` içindeki `HOSTNAME` değerini değiştirin:
 
 ```env
-HOSTNAME=uat-turkticaretbankasi.ttbank.local
+HOSTNAME=
 ```
 
 Artifact dosyalarındaki:
